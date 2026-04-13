@@ -192,9 +192,9 @@ const App: React.FC = () => {
     switch (activeTab) {
       case 'Dashboard':
         return <Dashboard onNavigate={(tab) => setActiveTab(tab)} />;
-      case 'Skills Management':
+      case 'Skills':
       case 'Skill-Proficiency descriptors':
-        let initialSubTab: any = 'Skills Management';
+        let initialSubTab: any = 'Skills';
         if (activeTab === 'Skill-Proficiency descriptors') initialSubTab = 'Skill-Proficiency descriptors';
         
         return (
@@ -210,7 +210,7 @@ const App: React.FC = () => {
             initialSubTab={initialSubTab}
           />
         );
-      case 'Job Profile Management':
+      case 'Job Profiles':
       case 'Job Role Mapping':
       case 'Job Variant Mapping':
         let initialJobSubTab: any = 'Job Role Mapping';
@@ -230,7 +230,7 @@ const App: React.FC = () => {
             initialSubTab={initialJobSubTab}
           />
         );
-      case 'Competency Management':
+      case 'Competencies':
         return (
           <CompetencyHub 
             competencies={competencies}
@@ -248,7 +248,7 @@ const App: React.FC = () => {
             jobVariants={jobVariants}
           />
         );
-      case 'Hierarchy Management':
+      case 'Skill Groups':
         return (
           <HierarchyManagement 
             taxonomyNodes={taxonomyNodes}
@@ -257,7 +257,7 @@ const App: React.FC = () => {
             competencies={competencies}
           />
         );
-      case 'Type Configuration':
+      case 'Skill Types':
         return (
           <TypeConfiguration 
             skillCategories={skillCategories} setSkillCategories={setSkillCategories}

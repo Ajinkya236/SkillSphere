@@ -241,7 +241,7 @@ const HierarchyManagement: React.FC<HierarchyManagementProps> = ({
     <div className="p-8 space-y-8 animate-fadeIn min-h-full bg-[#f8fafc]">
       <header className="flex justify-between items-start">
         <div>
-          <h2 className="text-3xl font-extrabold text-gray-900">Hierarchy Management</h2>
+          <h2 className="text-3xl font-extrabold text-gray-900">Skill Groups</h2>
           <p className="text-gray-600 text-sm font-medium mt-1">Manage hierarchical structure for skills and competencies</p>
         </div>
         <div className="relative w-72">

@@ -54,53 +54,53 @@ const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
               <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl py-2 text-gray-800 border border-gray-100 animate-fadeIn">
                 <button 
                   onClick={() => {
-                    onNavigate('Type Configuration');
+                    onNavigate('Skill Types');
                     setIsMoreOpen(false);
                   }}
                   className="w-full text-left px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 transition font-medium flex items-center"
                 >
                   <div className="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
-                  Type Configuration
+                  Skill Types
                 </button>
                 <button 
                   onClick={() => {
-                    onNavigate('Hierarchy Management');
+                    onNavigate('Skill Groups');
                     setIsMoreOpen(false);
                   }}
                   className="w-full text-left px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 transition font-medium flex items-center"
                 >
                   <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                  Hierarchy Management
+                  Skill Groups
                 </button>
                 <button 
                   onClick={() => {
-                    onNavigate('Skills Management');
+                    onNavigate('Skills');
                     setIsMoreOpen(false);
                   }}
                   className="w-full text-left px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 transition font-medium flex items-center"
                 >
                   <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
-                  Skills Management
+                  Skills
                 </button>
                 <button 
                   onClick={() => {
-                    onNavigate('Competency Management');
+                    onNavigate('Competencies');
                     setIsMoreOpen(false);
                   }}
                   className="w-full text-left px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 transition font-medium flex items-center"
                 >
                   <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
-                  Competency Management
+                  Competencies
                 </button>
                 <button 
                   onClick={() => {
-                    onNavigate('Job Profile Management');
+                    onNavigate('Job Profiles');
                     setIsMoreOpen(false);
                   }}
                   className="w-full text-left px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 transition font-medium flex items-center"
                 >
                   <div className="w-2 h-2 bg-red-500 rounded-full mr-3"></div>
-                  Job Profile Management
+                  Job Profiles
                 </button>
                 <div className="border-t border-gray-100 my-1"></div>
                 <button className="w-full text-left px-4 py-2 text-sm hover:bg-gray-50 transition">Performance</button>

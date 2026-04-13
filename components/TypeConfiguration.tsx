@@ -207,7 +207,7 @@ const TypeConfiguration: React.FC<TypeConfigurationProps> = ({ skillCategories, 
         <>
           <header className="flex justify-between items-start">
             <div>
-              <h2 className="text-3xl font-extrabold text-gray-900">Type Configuration</h2>
+              <h2 className="text-3xl font-extrabold text-gray-900">Skill Types</h2>
               <p className="text-gray-600 text-sm font-medium mt-1">Manage types and proficiency levels for both skills and competencies</p>
             </div>
             <button 

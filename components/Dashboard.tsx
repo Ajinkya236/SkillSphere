@@ -9,25 +9,25 @@ interface DashboardProps {
 const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
   const dashboardCards = [
     {
-      title: 'Skills Management',
+      title: 'Skills',
       desc: 'Design skill clusters, skill groups, and individual skills to build a shared language.',
       link: 'Open Hierarchy',
       color: 'bg-indigo-500',
-      tab: 'Skills Management' as NavigationTab
+      tab: 'Skills' as NavigationTab
     },
     {
-      title: 'Competency Management',
+      title: 'Competencies',
       desc: 'Define and manage organizational competencies by grouping skills.',
       link: 'Manage Competencies',
       color: 'bg-cyan-500',
-      tab: 'Competency Management' as NavigationTab
+      tab: 'Competencies' as NavigationTab
     },
     {
-      title: 'Job Profile Management',
+      title: 'Job Profiles',
       desc: 'Align job roles and variants with the unique skill sets they require.',
       link: 'Map Roles',
       color: 'bg-pink-500',
-      tab: 'Job Profile Management' as NavigationTab
+      tab: 'Job Profiles' as NavigationTab
     }
   ];
 

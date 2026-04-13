@@ -9,11 +9,11 @@ interface SidebarProps {
 
 const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
   const menuItems: { label: NavigationTab; subtext?: string }[] = [
-    { label: 'Type Configuration' },
-    { label: 'Hierarchy Management' },
-    { label: 'Skills Management' },
-    { label: 'Competency Management' },
-    { label: 'Job Profile Management' },
+    { label: 'Skill Types' },
+    { label: 'Skill Groups' },
+    { label: 'Skills' },
+    { label: 'Competencies' },
+    { label: 'Job Profiles' },
   ];
 
   return (
@@ -34,8 +34,8 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
                 onClick={() => setActiveTab(item.label)}
                 className={`w-full text-left px-6 py-3 text-sm font-medium transition-colors border-l-4 ${
                   activeTab === item.label || 
-                  (item.label === 'Skills Management' && ['Skill-Proficiency descriptors', 'Skill-Skill Relationships'].includes(activeTab)) ||
-                  (item.label === 'Job Profile Management' && ['Job Role Mapping', 'Job Variant Mapping'].includes(activeTab))
+                  (item.label === 'Skills' && ['Skill-Proficiency descriptors', 'Skill-Skill Relationships'].includes(activeTab)) ||
+                  (item.label === 'Job Profiles' && ['Job Role Mapping', 'Job Variant Mapping'].includes(activeTab))
                     ? 'bg-blue-50 text-blue-700 border-blue-700'
                     : 'text-gray-600 border-transparent hover:bg-gray-50'
                 }`}

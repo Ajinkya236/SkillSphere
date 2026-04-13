@@ -1490,7 +1490,7 @@ const JobVariantMapping: React.FC<JobVariantMappingProps> = ({ jobRoles, jobVari
     <div className="p-8 space-y-8 animate-fadeIn min-h-full">
       <header className="flex justify-between items-start">
         <div>
-          <p className="text-gray-500 text-sm font-bold uppercase tracking-widest">Skills Management</p>
+          <p className="text-gray-500 text-sm font-bold uppercase tracking-widest">Skills</p>
           <h2 className="text-3xl font-extrabold text-gray-900 mt-2">Job Variant - Skill Management</h2>
           <p className="text-gray-600 text-sm font-medium mt-1">Manage skill relationships for job variants and their specific requirements</p>
         </div>

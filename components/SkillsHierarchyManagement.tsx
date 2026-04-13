@@ -21,7 +21,7 @@ interface SkillsHierarchyManagementProps {
   initialSubTab?: SubTab;
 }
 
-type SubTab = 'Skills Management' | 'Skill-Proficiency descriptors' | 'Skill-Skill Relationships';
+type SubTab = 'Skills' | 'Skill-Proficiency descriptors' | 'Skill-Skill Relationships';
 
 const SkillsHierarchyManagement: React.FC<SkillsHierarchyManagementProps> = (props) => {
   const [activeSubTab, setActiveSubTab] = useState<SubTab>(
@@ -29,25 +29,25 @@ const SkillsHierarchyManagement: React.FC<SkillsHierarchyManagementProps> = (pro
       ? 'Skill-Proficiency descriptors' 
       : props.initialSubTab === 'Skill-Skill Relationships'
         ? 'Skill-Skill Relationships'
-        : 'Skills Management'
+        : 'Skills'
   );
 
   // Sync with prop if it changes (e.g. from dashboard navigation)
   React.useEffect(() => {
-    if (props.initialSubTab === 'Skill-Proficiency descriptors' || props.initialSubTab === 'Skills Management' || props.initialSubTab === 'Skill-Skill Relationships') {
+    if (props.initialSubTab === 'Skill-Proficiency descriptors' || props.initialSubTab === 'Skills' || props.initialSubTab === 'Skill-Skill Relationships') {
       setActiveSubTab(props.initialSubTab as SubTab);
     }
   }, [props.initialSubTab]);
 
   const tabs: SubTab[] = [
-    'Skills Management',
+    'Skills',
     'Skill-Proficiency descriptors',
     'Skill-Skill Relationships'
   ];
 
   const renderSubContent = () => {
     switch (activeSubTab) {
-      case 'Skills Management':
+      case 'Skills':
         return (
           <SkillsManagement 
             taxonomyNodes={props.taxonomyNodes}
@@ -91,7 +91,7 @@ const SkillsHierarchyManagement: React.FC<SkillsHierarchyManagementProps> = (pro
       <div className="bg-white border-b border-gray-200 px-8 pt-6">
         <div className="flex items-center justify-between mb-4">
           <div>
-            <h2 className="text-2xl font-extrabold text-gray-900">Skills Management</h2>
+            <h2 className="text-2xl font-extrabold text-gray-900">Skills</h2>
             <p className="text-gray-500 text-sm font-medium mt-1">Manage your skills and their proficiency descriptors</p>
           </div>
         </div>

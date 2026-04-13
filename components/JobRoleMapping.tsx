@@ -592,7 +592,7 @@ const JobRoleMapping: React.FC<JobRoleMappingProps> = ({ jobRoles, setJobRoles, 
       {view === 'detail' && selectedJobRole ? (
         <>
           <header className="flex flex-col space-y-4">
-            <p className="text-gray-500 text-sm">Skills Management</p>
+            <p className="text-gray-500 text-sm">Skills</p>
             <div className="flex items-center space-x-2 text-[#1e3a8a] cursor-pointer hover:underline" onClick={() => { setView('list'); setSelectedJobRoleId(null); }}>
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
             <span className="text-sm font-bold">Back to Job Roles</span>
@@ -1232,7 +1232,7 @@ const JobRoleMapping: React.FC<JobRoleMappingProps> = ({ jobRoles, setJobRoles, 
         <>
       <header className="flex justify-between items-end">
         <div>
-          <p className="text-gray-500 text-sm">Skills Management</p>
+          <p className="text-gray-500 text-sm">Skills</p>
           <h2 className="text-3xl font-extrabold text-gray-900 mt-2">Job Role - Skill Relationship</h2>
           <p className="text-gray-600 text-sm font-medium mt-1">Manage job roles and their required skill proficiencies</p>
         </div>

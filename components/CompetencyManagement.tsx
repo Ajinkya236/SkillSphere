@@ -268,7 +268,7 @@ const CompetencyManagement: React.FC<CompetencyManagementProps> = ({
         <>
           <header className="flex justify-between items-start">
             <div>
-              <h2 className="text-3xl font-extrabold text-gray-900">Competency Management</h2>
+              <h2 className="text-3xl font-extrabold text-gray-900">Competencies</h2>
               <p className="text-gray-600 text-sm font-medium mt-1">Define and manage organizational competencies</p>
             </div>
             <button 

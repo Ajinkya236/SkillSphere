@@ -1,15 +1,15 @@
 
 export type NavigationTab = 
   | 'Dashboard' 
-  | 'Skills Management'
-  | 'Job Profile Management'
-  | 'Type Configuration'
-  | 'Hierarchy Management'
+  | 'Skills'
+  | 'Job Profiles'
+  | 'Skill Types'
+  | 'Skill Groups'
   | 'Skill-Proficiency descriptors' 
   | 'Skill Relationships' 
   | 'Job Role Mapping' 
   | 'Job Variant Mapping'
-  | 'Competency Management';
+  | 'Competencies';
 
 export interface TaxonomyItem {
   id: string;
